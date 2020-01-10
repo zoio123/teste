@@ -13,10 +13,36 @@
 
 <body>
 
-    
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="nav-link active" href="#">Ativo</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link disabled" href="#">Desativado</a>
+      </nav>
 
 
     <div class="container">
+        <div class="row">
+            <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <span class="page-link">Anterior</span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <span class="page-link">
+                      2
+                      <span class="sr-only">(atual)</span>
+                    </span>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Próximo</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+
         <div class="row">
             <div class="col">
                 <div class="card border-danger mb-3" id="card1" style="width: 200;height: 240;">

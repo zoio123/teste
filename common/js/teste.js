@@ -15,23 +15,23 @@ HOVER - CONTROLE 1
 $(document).ready(function(){
     $("#card1").hover(function(){
         if(controle1===0){
-            $(this).removeClass("card border-danger mb-3");
-            $(this).addClass("card text-white bg-warning mb-3");
+            //$(this).removeClass("card border-danger mb-3");
+            $(this).addClass("card bg-warning mb-3");
         }
     }, function(){
-        $(this).removeClass("card text-white bg-warning mb-3");
-        $(this).addClass("card border-danger mb-3");
+        $(this).removeClass("card bg-warning mb-3");
+        //$(this).addClass("card border-danger mb-3");
     });  
 });
 $(document).ready(function(){
     $("#card2").hover(function(){
         if(controle1===0){
-            $(this).removeClass("card border-danger mb-3");
-            $(this).addClass("card text-white bg-warning mb-3");
+            //$(this).removeClass("card border-danger mb-3");
+            $(this).addClass("card bg-warning mb-3");
         }
     }, function(){
-        $(this).removeClass("card text-white bg-warning mb-3");
-        $(this).addClass("card border-danger mb-3");
+        $(this).removeClass("card bg-warning mb-3");
+        //$(this).addClass("card border-danger mb-3");
     });  
 });
 /*
@@ -41,12 +41,12 @@ CLICK - CONTROLE 1
 */
 $("#card1").click(function(){
     if(controle1===0){
-        $(this).removeClass("card border-danger mb-3");
-        $(this).removeClass("card text-white bg-warning mb-3");
-        $(this).addClass("card text-white bg-success mb-3");
-        $("#card2").removeClass("card border-danger mb-3");
-        $("#card2").removeClass("card text-white bg-warning mb-3");
-        $("#card2").addClass("card text-white bg-dark mb-3");
+        //$(this).removeClass("card border-danger mb-3");
+        $(this).removeClass("card bg-warning mb-3");
+        $(this).addClass("card bg-success mb-3");
+        //$("#card2").removeClass("card border-danger mb-3");
+        $("#card2").removeClass("card bg-warning mb-3");
+        $("#card2").addClass("card bg-dark mb-3");
         controle1=1;
     }
     else{
@@ -55,12 +55,12 @@ $("#card1").click(function(){
 });
 $("#card2").click(function(){
     if(controle1===0){
-        $(this).removeClass("card border-danger mb-3");
-        $(this).removeClass("card text-white bg-warning mb-3");
-        $(this).addClass("card text-white bg-success mb-3");
-        $("#card1").removeClass("card border-danger mb-3");
-        $("#card1").removeClass("card text-white bg-warning mb-3");
-        $("#card1").addClass("card text-white bg-dark mb-3");  
+        //$(this).removeClass("card border-danger mb-3");
+        $(this).removeClass("card bg-warning mb-3");
+        $(this).addClass("card bg-success mb-3");
+        //$("#card1").removeClass("card border-danger mb-3");
+        $("#card1").removeClass("card bg-warning mb-3");
+        $("#card1").addClass("card bg-dark mb-3");  
         controle1=1;       
     } 
     else{
